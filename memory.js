@@ -41,12 +41,14 @@ display: flex;
 }
 .grid {
     margin: 0 auto;
+    height: 40%;
     width: 80vw;
     max-width: 40vh;
     font-size: 1rem;
 }
 .title{
 
+    font-size: 3em;
       padding-top: 20px;
     padding-bottom: 40px;
 }
@@ -179,13 +181,14 @@ display: flex;
 }
 .grid {
     margin: 0 auto;
-    height: 60vh;
+    height: 40%;
     width: 80vw;
     max-width: 60vh;
     font-size: 1rem;
 }
 .title{
 
+    font-size: 3em;
       padding-top: 20px;
     padding-bottom: 50px;
 }
@@ -285,18 +288,19 @@ display: flex;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: rgba(255,255,255,1);
 }
 .grid {
     margin: 0 auto;
-    height: 60vh;
+    height: 40%;
     width: 80vw;
     max-width: 60vh;
     font-size: 1rem;
 }
 .title{
 
+    font-size: 3em;
       padding-top: 20px;
     padding-bottom: 50px;
 }
@@ -392,7 +396,7 @@ display: flex;
 let instructions = `
 <style>
 .wrapper {
-
+    font-size: 3em;
     z-index: 2000;
     padding: 25px;
     margin: 0;
@@ -443,7 +447,7 @@ let finalInstructions = `
   <style>
   .wrapper {
      text-align: center;
-  
+     font-size: 3em;
       padding: 25px;
       margin: 0;
       top: 0;
