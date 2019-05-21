@@ -29,22 +29,23 @@ display: flex;
 }
 
 #custom_target {
-
-      text-align: center;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
     padding: 3%;
     margin: 0;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 94%;
     height: 100%;
     background: rgba(255,255,255,1);
 }
 .grid {
     margin: 0 auto;
-    height: 40%;
-    width: 80vw;
+    height: 50%;
     max-width: 40vh;
     font-size: 1rem;
+    touch-action: manipulation;
 }
 .title{
 
@@ -169,22 +170,23 @@ display: flex;
 }
 
 #custom_target {
-
+    overflow: hidden;
+    position: fixed;
       text-align: center;
     padding: 3%;
     margin: 0;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 94%;
     height: 100%;
     background: rgba(255,255,255,1);
 }
 .grid {
     margin: 0 auto;
-    height: 40%;
-    width: 80vw;
+    height: 50%;
     max-width: 60vh;
     font-size: 1rem;
+    touch-action: manipulation;
 }
 .title{
 
@@ -281,22 +283,23 @@ display: flex;
 }
 
 #custom_target {
-
+    overflow: hidden;
+    position: fixed;
       text-align: center;
     padding: 3%;
     margin: 0;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 94%;
     height: 100vh;
     background: rgba(255,255,255,1);
 }
 .grid {
     margin: 0 auto;
-    height: 40%;
-    width: 80vw;
+    height: 50%;
     max-width: 60vh;
     font-size: 1rem;
+    touch-action: manipulation;
 }
 .title{
 
@@ -402,7 +405,6 @@ let instructions = `
     margin: 0;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
     background: rgba(255,255,255,1);
 }
@@ -452,7 +454,6 @@ let finalInstructions = `
       margin: 0;
       top: 0;
       left: 0;
-      width: 100%;
       height: 100%;
       background: rgba(255,255,255,1);
   }
