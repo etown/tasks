@@ -5,10 +5,16 @@ let latency_task = `
 <style>
 
 #custom_target {
-
-      text-align: center;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    margin: 0;
+    top: 0;
+    left: 0;
+    text-align: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    touch-action: manipulation;
     background: rgba(255,255,255,1);
 }
 html, body, .cont {
@@ -84,17 +90,20 @@ let overlay = `
 let instructions = `
      <style>
      .wrapper {
-        line-height: 1.2em;
-         z-index: 2000;
-         margin: 1em;
-         font-size: 4vw;
-         background: rgba(255,255,255,1);
+        font-size: 3em;
+        z-index: 2000;
+        padding: 25px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: rgba(255,255,255,1);
      }
      </style>
      
        <div class="wrapper">
      <div>The next screen has numbers and letters in circles. Starting with the number 1 (in red), ${supportsTouch ? 'tap' : 'click'} on each number and letter, alternating between the two. Start at the number 1, ${supportsTouch ? 'tap' : 'click'} on 1, then ${supportsTouch ? 'tap' : 'click'} on the letter A, then ${supportsTouch ? 'tap' : 'click'} on the number 2, and then ${supportsTouch ? 'tap' : 'click'} on the letter B, and so on. A line will appear between the circles when the order is correct. <br><br>
-     If you make a mistake, a red X will appear on the screen. When you see the X, ${supportsTouch ? 'tap' : 'click'} the correct circle to continue. 
+     If you make a mistake, a red <span style="color:red">X</span> will appear on the screen. When you see the <span style="color:red">X</span>, ${supportsTouch ? 'tap' : 'click'} the correct circle to continue. 
      <br><br>
      Work as quickly and accurately as you can.
      
@@ -321,6 +330,9 @@ if (window.Qualtrics) {
     window.addEventListener('keydown', function () {
         handleExperimentInput(this)
     });
+    window.addEventListener('mousedown', function () {
+        handleExperimentInput(this)
+    });
 } else {
     let stub = {
         hideNextButton: function () {
@@ -346,6 +358,9 @@ window.addEventListener('touchstart', function () {
     handleExperimentInput()
 });
 window.addEventListener('keydown', function () {
+    handleExperimentInput()
+});
+window.addEventListener('mousedown', function () {
     handleExperimentInput()
 });
 function is_colliding(jQuerydiv1, jQuerydiv2) {
