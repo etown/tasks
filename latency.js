@@ -13,6 +13,7 @@ let latency_task = `
     text-align: center;
     width: 100%;
     height: 100%;
+    touch-action: manipulation;
     background: rgba(255,255,255,1);
 }
 .latency{
@@ -20,10 +21,11 @@ let latency_task = `
     display: flex;
     align-items: center;
     justify-content: center;
-
+    touch-action: manipulation;
     background: black;
 }
 .stimulus {
+    touch-action: manipulation;
     position: relative;
     display: none;
     top: 50%;
@@ -37,6 +39,7 @@ let latency_task = `
     display: inline-block;
     position: fixed;
     top: 0;
+    touch-action: manipulation;
     bottom: 0;
     left: 0;
     right: 0;
