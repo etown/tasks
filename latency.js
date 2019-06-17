@@ -4,24 +4,18 @@ let latency_task = `
 <style>
 
 #custom_target {
-
-      text-align: center;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    margin: 0;
+    top: 0;
+    left: 0;
+    text-align: center;
     width: 100%;
     height: 100%;
     background: rgba(255,255,255,1);
 }
-.grid {
-    z-index: 2000;
-    margin: 0 auto;
-    width: 80vw;
-    max-width: 40vh;
-    height: 80vw;
-    max-height: 60vh;
-    font-size: 1rem;
-}
 .latency{
-    
-
     height: 100vh;
     display: flex;
     align-items: center;
@@ -56,11 +50,15 @@ let latency_task = `
  let instructions = `
  <style>
  .wrapper {
-    line-height: 1.2em;
-     z-index: 2000;
-     margin: 1em;
-     font-size: 4vw;
-     background: rgba(255,255,255,1);
+    font-size: 3em;
+    z-index: 2000;
+    padding: 25px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    text-align: Center;
+    height: 100%;
+    background: rgba(255,255,255,1);
  }
  </style>
  
@@ -77,14 +75,17 @@ let latency_task = `
   `;
 let finalInstructions = `
 <style>
-.wrapper {
 
-    line-height: 1.2em;
+.wrapper {
+    font-size: 3em;
     z-index: 2000;
-    margin: 1em;
-    font-size: 4vw;
+    text-align: Center;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
     background: rgba(255,255,255,1);
-}
+ }
 </style>
 
   <div class="wrapper">
