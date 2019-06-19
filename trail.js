@@ -40,12 +40,13 @@ body {
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
 }
+
 .circle {
     z-index: 3;
-    height: 40px;
-    line-height: 40px;
-    font-size: 30px;
-    width: 40px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    width: 100px;
     text-align: center;
     color: #fff;
     background-color: #2aE;
@@ -389,8 +390,8 @@ function line(x, y, x1, y1) {
     //soh cah TOA and pythargoream theorem
     var w = window.circles.width() / 2;
     l.css({
-        top: y + w + 20,
-        left: x + w + 20,
+        top: y + w + 50,
+        left: x + w + 50,
         width: Math.sqrt((x1 - x) * (x1 - x) + (y1 - y) * (y1 - y)),
         transform: 'rotate(' + Math.atan2((y1 - y), (x1 - x)) + 'rad)'
     });
