@@ -43,6 +43,7 @@ body {
 
 .circle {
     z-index: 3;
+    font-weight: bold;
     height: 100px;
     line-height: 100px;
     font-size: 40px;
